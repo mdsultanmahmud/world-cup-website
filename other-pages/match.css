@@ -1,0 +1,20 @@
+/*---------------------------
+ design match.html pages in here  
+ ------------------------------------*/
+
+ /* ----------
+ desing blog section  
+ ------------*/
+ .img-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 0.7rem;
+ }
+ .img-section img{
+    width: 30%;
+ }
+.blog .times{
+    color: grey;
+    margin-bottom: 30px;
+}

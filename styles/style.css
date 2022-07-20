@@ -1,0 +1,278 @@
+/* #####
+
+# */
+
+/* ----------
+google fonts
+ ------------ */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/*---------------- 
+common desgin 
+----------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*------------------------- 
+banner section desgin 
+------------------------ */
+#banner{
+    background-color: rgb(3, 3, 77);
+    display: flex;
+    border-radius: 20px;
+    
+    
+}
+#banner .banner-part{
+    width: 50%;
+    padding: 1rem;
+}
+.heading-title{
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+}
+#banner p{
+    color: white;
+    font-size: 16px;
+}
+.active{
+    background-color:red;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 1rem 0;
+    border: none;
+}
+.active i{
+    margin-left: 8px;
+}
+.banner-part img{
+    transition: all 1s linear;
+    width: 80%;
+    margin-left: 5%;
+}
+/* ------------------
+transition in heading
+----------------------  */
+
+#banner button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+#banner:hover  img{
+    transform: scale(0.8);
+}
+/*--------------------
+ blogs section design 
+---------------------- */
+#blogs-container{
+    display: flex;
+    margin-top: 5rem;
+    column-gap: 1rem;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 0.3rem;
+}
+.blogs-links{
+    background-color: rgb(3, 3, 77);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    height: 230px;
+    min-width: 190px;
+}
+.blogs-links a{
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    margin: 0.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    font-weight: 700;
+    border: 1px solid black;
+}
+.blogs-links .active{
+    background-color: red;
+    color: white;
+}
+.blog{
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 0.5rem ;
+}
+.blog .blog-img{
+    width: 100%;
+}
+.blog button{
+    display: block;
+    padding:0.4rem 1rem;
+    border: 1px solid grey;
+    border-radius: 0.4rem;
+    margin: 1rem 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+.blog .blog-title{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0.5rem 0;
+
+}
+.blog .blog-footer{
+    display: flex;
+    column-gap: 1.6rem;
+}
+.blog .blog-footer-part{
+    display:flex;
+    column-gap: 0.4rem;
+    align-items: center;
+}
+.blog-footer-part img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.blog-footer-part p{
+    font-weight: 700;
+    color: grey;
+}
+
+/* ---------------------
+display view all button
+---------------------  */
+.display{
+    display: none;
+    margin: 2rem auto;
+}
+
+/*----------------
+ footer design 
+-------------------- */
+
+footer{
+    background-color: rgb(3, 3, 77);
+}
+.footer-title{
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 5rem 0 2.5rem 0;
+    border-bottom: 1px solid grey;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.quick-links{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 5rem 0;
+}
+.quick-links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    color: grey;
+}
+
+.socail-links{
+    min-height: 100px;
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.socail-links p{
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socail-links a{
+    text-decoration: none;
+}
+.socail-links i{
+    font-size: 20px;
+    color: black;
+}
+
+.socail-links i:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+/*------------------------------------
+ meadia query for difference device 
+------------------------------------- */
+
+/* for mobile device */
+@media only screen and (max-width:688px){
+    #banner{
+        flex-direction: column;
+        justify-content: center;
+         align-items: center;
+    }
+    #blogs-container{
+        flex-direction: column;
+    }
+    .blogs-links{
+        background-color: white;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 0.3rem;
+    }
+    .quick-links{
+        display: flex;
+        align-items: center;
+        row-gap: 1rem;
+        flex-direction: column;
+    }
+}
+/* for tablet */
+@media only screen and (min-width:688px) and (max-width:992px){
+    #blogs-container{
+        flex-direction: column;
+    }
+    .blogs-links{
+        display: grid;
+        background-color: white;
+        grid-template-columns: repeat(3,1fr);
+        height: auto;
+    }
+    .blogs{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 0.3rem;
+    }
+    .quick-links{
+        display: flex;
+        align-items: center;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    /* button show only for tablet  */
+    .display{
+        display: block;
+    }
+}
