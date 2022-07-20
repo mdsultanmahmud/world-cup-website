@@ -42,7 +42,7 @@ banner section desgin
     font-size: 16px;
 }
 .active{
-    background-color:red;
+    background-color:tomato;
     color: white;
     font-weight: 500;
     font-size: 14px;
@@ -58,7 +58,7 @@ banner section desgin
     transition: all 1s linear;
     width: 80%;
     margin-left: 5%;
-    height: 80%;
+    height: 100%;
 }
 /* ------------------
 transition in heading
@@ -101,11 +101,11 @@ transition in heading
     margin: 0.5rem;
     background-color: white;
     border-radius: 1rem;
-    font-weight: 700;
+    font-weight: 500;
     border: 1px solid black;
 }
 .blogs-links .active{
-    background-color: red;
+    background-color: tomato;
     color: white;
 }
 .blogs{
@@ -259,6 +259,7 @@ footer{
         flex-direction: column;
     }
 }
+
 /* for tablet */
 @media only screen and (min-width:688px) and (max-width:992px){
     #blogs-container{
@@ -283,7 +284,7 @@ footer{
         flex-wrap: wrap;
     }
 
-    /* button show only for tablet  */
+    /* show button only for tablet  */
     .display{
         display: block;
     }
